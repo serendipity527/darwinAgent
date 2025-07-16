@@ -1,0 +1,49 @@
+/* 自定义CSS样式 */
+
+/* 导航栏样式 */
+#navbar {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮样式 */
+button.primary {
+    background-color: #2563eb !important;
+    color: white !important;
+}
+
+button.primary:hover {
+    background-color: #1d4ed8 !important;
+}
+
+/* 聊天界面样式 */
+#chatbot {
+    height: 500px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* 用户输入框样式 */
+#user-input {
+    border-radius: 8px;
+}
+
+/* 搜索结果样式 */
+#search-results {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    .mobile-full-width {
+        width: 100% !important;
+    }
+} 
