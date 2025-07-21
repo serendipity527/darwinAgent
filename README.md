@@ -74,6 +74,18 @@ docker-compose up -d
 pytest
 ```
 
+## 依赖同步与自动导出 requirements.txt
+
+本项目依赖统一维护在 `pyproject.toml` 的 `[project.dependencies]` 字段。
+
+如需生成/更新 `requirements.txt`，请运行：
+
+```bash
+uv pip freeze > requirements.txt
+```
+
+这样可确保 `requirements.txt` 与当前环境和 `pyproject.toml` 保持同步，适用于部署、CI/CD 或兼容老工具链。
+
 ## 许可证
 
 [MIT](LICENSE)
